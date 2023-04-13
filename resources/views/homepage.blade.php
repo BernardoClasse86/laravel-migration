@@ -21,7 +21,7 @@
 
             <div class="details-row">
                 <div>Train code: {{$train->train_code}}</div>
-                <div>Ticket Price: {{$train->price}} &euro;</div>
+                {{-- <div>Ticket Price: {{$train->price}} &euro;</div> --}}
                 <div>Carriage Number: {{$train->carriage}}</div>
             </div>
         </div>

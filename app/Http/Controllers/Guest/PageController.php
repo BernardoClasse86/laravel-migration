@@ -10,9 +10,11 @@ class PageController extends Controller
 {
     public function homepage()
     {
-        $trains = Train::where('departure_date', '=', date('Y-m-d'))
-            ->orderby('price', 'asc')
-            ->get();
+        // $trains = Train::where('departure_date', '=', date('Y-m-d'))
+        //     ->orderby('price', 'asc')
+        //     ->get();
+
+        $trains = Train::all();
 
         $data = [
             'trains' => $trains
